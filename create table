@@ -1,0 +1,35 @@
+-- Tabel untuk Kelas Perancangan
+CREATE TABLE kliean (
+    ID INT PRIMARY KEY,
+    namakl VARCHAR(255) NOT NULL,
+    emailkl VARCHAR(255) NOT NULL,
+    passwordkl VARCHAR(255) NOT NULL,
+    IdKlien INT NOT NULL,
+    alamat VARCHAR(255),
+    umur INT
+);
+
+CREATE TABLE konselor (
+    ID INT PRIMARY KEY,
+    namako VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    passwordko VARCHAR(255) NOT NULL,
+    IdKonselor INT,
+    FOREIGN KEY (IdKonselor) REFERENCES kliean(Id)
+);
+
+CREATE TABLE pembayaran (
+    ID INT PRIMARY KEY,
+    total INT NOT NULL,
+    metodpembayaran VARCHAR(255) NOT NULL,
+    resi VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE konseling (
+    ID INT PRIMARY KEY,
+    durasi INT NOT NULL,
+    namakl VARCHAR(255) NOT NULL,
+    emailkl VARCHAR(255) NOT NULL,
+    namako VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL
+);
