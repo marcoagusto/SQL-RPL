@@ -1,0 +1,15 @@
+-- Memasukkan data ke dalam tabel kliean
+INSERT INTO kliean (ID, namakl, emailkl, passwordkl, IdKlien, alamat, umur)
+VALUES (1, 'Kelas1', 'kelas1@example.com', 'password1', 101, 'Alamat1', 25);
+
+-- Memasukkan data ke dalam tabel konselor
+INSERT INTO konselor (ID, namako, email, passwordko, IdKonselor)
+VALUES (2, 'Kelas2', 'kelas2@example.com', 'password2', 102);
+
+-- Memasukkan data ke dalam tabel pembayaran
+INSERT INTO pembayaran (ID, total, metodpembayaran, resi)
+VALUES (3, 100, 'Transfer', '12345');
+
+-- Memasukkan data ke dalam tabel konseling
+INSERT INTO konseling (ID, durasi, namakl, emailkl, namako, email)
+VALUES (4, 30, 'Konseling1', 'konseling1@example.com', 'Konselor1', 'konselor1@example.com');
